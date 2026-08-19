@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#101116">
+<meta name="description" content="南本八幡から宇宙ライブまで、しょうもない異変を追う地域密着型ネタRPG。PC・タブレット対応。">
+<title>ユータアーンRPG</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#101116;color:#f7f3df;font-family:ui-monospace,"MS Gothic",monospace;overscroll-behavior:none}body{display:grid;place-items:center;min-height:100dvh;padding:max(10px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}.shell{width:min(100%,1100px)}h1{margin:0 0 8px;font-size:clamp(14px,2vw,18px)}.utility{display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px;flex-wrap:wrap}.utility button,.control{border:2px solid #9d947b;border-radius:10px;background:#292a33;color:#fff7d8;font:inherit;font-weight:700}.utility button{padding:7px 10px;font-size:12px}.frame{border:4px solid #d5cbaa;background:#000;box-shadow:0 12px 40px #0008}canvas{display:block;width:100%;aspect-ratio:16/9;image-rendering:pixelated;background:#15171c;touch-action:none}.touch{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:18px;margin-top:10px;user-select:none;touch-action:none}.dpad{display:grid;grid-template-columns:repeat(3,58px);grid-template-rows:repeat(3,58px);gap:5px}.actions{display:grid;grid-template-columns:repeat(2,minmax(70px,96px));gap:9px;justify-content:end}.control{min-width:58px;min-height:58px;font-size:18px;touch-action:none}.primary{min-height:68px;border-color:#d2a84f;background:#5a403e}.secondary{font-size:12px}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}.help{display:flex;gap:12px;flex-wrap:wrap;padding-top:8px;font-size:12px;color:#c9c3ad}.note{margin-top:6px;font-size:11px;color:#8f8b7e}@media(hover:hover) and (pointer:fine){.touch{display:none}}@media(max-width:700px){.help{display:none}}button:focus-visible{outline:3px solid #f4cf68;outline-offset:2px}
+</style>
+</head>
+<body><main class="shell">
+<h1>ユータアーンRPG ― 南本八幡編 ―</h1>
+<div class="utility"><button id="sound">SOUND OFF</button><button id="full">FULLSCREEN</button></div>
+<div class="frame"><canvas id="game" width="640" height="360" aria-label="ユータアーンRPG"></canvas></div>
+<div class="touch"><div class="dpad"><button class="control up" data-k="ArrowUp">▲</button><button class="control left" data-k="ArrowLeft">◀</button><button class="control down" data-k="ArrowDown">▼</button><button class="control right" data-k="ArrowRight">▶</button></div><div class="actions"><button class="control secondary" data-k="p">SAVE</button><button class="control secondary" data-k="l">LOAD</button><button class="control" data-k="x">戻る</button><button class="control primary" data-k="z">決定</button></div></div>
+<div class="help">矢印/WASD 移動　Z/Enter 決定　X/Esc 戻る　P セーブ　L ロード</div><div class="note">PC・タブレット対応。タブレットは横向き推奨。</div>
+<script type="module" src="./game.js"></script>
+</main></body></html>
