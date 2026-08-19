@@ -19,5 +19,7 @@
 <div class="touch"><div class="dpad"><button class="control up" data-k="ArrowUp">▲</button><button class="control left" data-k="ArrowLeft">◀</button><button class="control down" data-k="ArrowDown">▼</button><button class="control right" data-k="ArrowRight">▶</button></div><div class="actions"><button class="control secondary" data-k="p">SAVE</button><button class="control secondary" data-k="l">LOAD</button><button class="control" data-k="x">戻る</button><button class="control primary" data-k="z">決定</button></div></div>
 <div class="help">矢印/WASD 移動　Z/Enter 決定　X/Esc 戻る　P セーブ　L ロード</div><div class="note">PC・タブレット対応。タブレットは横向き推奨。対応環境ではオフライン再プレイ可能。</div>
 <script>if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
-<script type="module" src="./game.js"></script>
+<script src="./game-core.js"></script>
+<script src="./game-play.js"></script>
+<script src="./game-render.js"></script>
 </main></body></html>
