@@ -1,0 +1,12 @@
+{
+  "name":"ユータアーンRPG",
+  "short_name":"ユータアーン",
+  "description":"南本八幡から宇宙ライブまで、しょうもない異変を追う地域密着型ネタRPG。",
+  "start_url":"./index.html",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"landscape",
+  "background_color":"#101116",
+  "theme_color":"#101116",
+  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
